@@ -20,12 +20,13 @@ class Start_Your_Day::Scraper
 
   def self.scrape_writing_tip
     doc2 = Nokogiri::HTML(open("https://www.dailywritingtips.com/"))
-    doc2.css(".post-block h2 a href").first-child of post-block   #this is the title and link # => how do i reference the first post block ??
-    docs2.css(".post-block p").first-child of post-block# this is the description
+    title_and_link = doc2.css(".post-block h2 a href").first-child of post-block   #this is the title and link # => how do i reference the first post block ??
+    content=doc2.css(".post-block p").first-child of post-block# this is the description
   end
 
   def self.scrape_word_of_the_day
     doc3= Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day"))
+    word-of-the-day = doc2.css("article")
   end
 
   def self.scrape_five_ideas
