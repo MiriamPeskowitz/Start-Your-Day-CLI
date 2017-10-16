@@ -49,11 +49,9 @@ class Start_Your_Day::CLI
 
   def date
 #require “date"
-    current_date = Date.now.strftime(%A/%B/%d/%Y)
-  end
-
-  def day_of_year
-      day_of_year = Date.now.strftime(%j)
+    d=DateTime.now
+    current_date = d.strftime(" %A %B %d %Y ")
+    day_of_year = d.strftime(" %j ")
   end
 
 end
