@@ -14,7 +14,22 @@ class Start_Your_Day::CLI
       4.https://www.aspeninstitute.org/ideas/
     DOCS
 
-  end 
+  end
+
+  def one_or_all
+    puts "Would you like all (press A) or a specific number (press that number)?"
+    puts "Meditation --> 1"
+    puts "Writing Tips --> 2"
+    puts "Word of the Day --> 3"
+    puts "Five Ideas from the Aspen Institute --> 4"
+    input = gets.strip
+
+    when input = "A"
+      puts "Begin your day with abundance!"
+
+    when input = "1"
+
+  end
 
   def date
     %A  day name
