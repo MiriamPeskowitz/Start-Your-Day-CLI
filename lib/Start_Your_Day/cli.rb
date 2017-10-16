@@ -20,13 +20,18 @@ class Start_Your_Day::CLI
   end
 
   def one_or_all
+<<<<<<< HEAD
     #ask for input
+=======
+    while input != "X"
+>>>>>>> eb40152a6e9f407b45b74397f9283713a6e2a31f
       puts "Press A for all daily starters or a specific number for one."
       puts "Meditation --> 1"
       puts "Writing Tips --> 2"
       puts "Word of the Day --> 3"
       puts "Five Ideas from the Aspen Institute --> 4"
       puts "To exit, press X"
+<<<<<<< HEAD
 
     #get input
       input = gets.strip.downcase
@@ -47,6 +52,25 @@ class Start_Your_Day::CLI
           puts "See you tomorrow"
           #add a default
       end
+=======
+      input = gets.strip
+
+      when input = "A"
+        puts "Begin your day with abundance!"# code this
+
+      when input = "1"
+        puts "Meditation tip"# code this
+      when input = "2"
+        puts "Writing Tip"# code this
+      when input = "3"
+        puts "Word of the Day is ... "# code this
+      when input = "4"
+        puts "Five Great Ideas"# code this
+      when input = "X"
+        puts "See you tomorrow"
+        #add a default
+    end
+>>>>>>> eb40152a6e9f407b45b74397f9283713a6e2a31f
 
   end
 

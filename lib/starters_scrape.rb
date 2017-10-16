@@ -6,7 +6,13 @@ class Start_Your_Day::Scraper
 
 
   def self.scrape_meditation
+<<<<<<< HEAD
     doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
+=======
+    binding.pry
+    doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
+    meditation = cod.search()
+>>>>>>> eb40152a6e9f407b45b74397f9283713a6e2a31f
   end
 
   def self.scrape_writing_tip
@@ -22,3 +28,7 @@ class Start_Your_Day::Scraper
   end
 
 end
+<<<<<<< HEAD
+=======
+  
+>>>>>>> eb40152a6e9f407b45b74397f9283713a6e2a31f
