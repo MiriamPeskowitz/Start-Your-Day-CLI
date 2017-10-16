@@ -14,7 +14,20 @@ class Start_Your_Day::CLI
       4.https://www.aspeninstitute.org/ideas/
     DOCS
 
+  end 
+
+  def date
+    %A  day name
+%B month
+%d day of month
+
   end
+
+  def day_of_year
+    %Y year
+
+  end
+
 
 
 
