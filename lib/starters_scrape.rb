@@ -1,4 +1,9 @@
-class Start_Your_Day::CLI
+require 'pry'
+require 'Nokogiri'
+
+class Start_Your_Day::Scraper
+
+  
 
   def self.scrape_meditation
     https://www.dailyzen.com/
