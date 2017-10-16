@@ -34,6 +34,8 @@ class Start_Your_Day::Scraper
     title = doc4.css(".five-best-ideas_card_text")
       alternate for title? li a .data-label
     article_link = doc4.css("li a .data-label href 
+    -- or should I scrape the larger section: ".five-best-ideas__card-container" and enumerate through it for .data-label and .href? 
+    
 
   end
 
