@@ -3,22 +3,22 @@ require 'Nokogiri'
 
 class Start_Your_Day::Scraper
 
-  
+
 
   def self.scrape_meditation
-    https://www.dailyzen.com/
+    doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
   end
 
   def self.scrape_writing_tip
-    https://www.dailywritingtips.com/
+    doc2 = Nokogiri::HTML(open("https://www.dailywritingtips.com/"))
   end
 
   def self.scrape_word_of_the_day
-    https://www.merriam-webster.com/word-of-the-day
+    doc3= Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day"))
   end
 
   def self.scrape_five_ideas
-    https://www.aspeninstitute.org/ideas/
+    doc4=Nokogiri::HTML(open("https://www.aspeninstitute.org/ideas/"))
   end
 
 end
