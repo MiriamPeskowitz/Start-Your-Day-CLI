@@ -1,3 +1,6 @@
+require 'pry'
+require 'date'
+
 class Start_Your_Day::CLI
 
   def welcome
@@ -18,7 +21,7 @@ class Start_Your_Day::CLI
 
   def one_or_all
     while input != "X"
-      puts "Would you like all (press A) or a specific number (press that number)?"
+      puts "Press A for all daily starters or a specific number for one."
       puts "Meditation --> 1"
       puts "Writing Tips --> 2"
       puts "Word of the Day --> 3"
@@ -27,37 +30,30 @@ class Start_Your_Day::CLI
       input = gets.strip
 
       when input = "A"
-        puts "Begin your day with abundance!"
+        puts "Begin your day with abundance!"# code this
 
       when input = "1"
-        puts "Meditation tip"
+        puts "Meditation tip"# code this
       when input = "2"
-        puts "Writing Tip"
+        puts "Writing Tip"# code this
       when input = "3"
-        puts "Word of the Day is ... "
+        puts "Word of the Day is ... "# code this
       when input = "4"
-        puts "Five Great Ideas"
+        puts "Five Great Ideas"# code this
+      when input = "X"
+        puts "See you tomorrow"
+        #add a default
     end
 
   end
 
   def date
-
-#require “date" -- fgure out where to put this
-
-    time = Time.new
-
-    Time.now.strftime(%A/%B/%d/%Y)
-    Time.now.strftime(%j)
+#require “date"
+    current_date = Date.now.strftime(%A/%B/%d/%Y)
   end
 
   def day_of_year
-    %Y year
-
+      day_of_year = Date.now.strftime(%j)
   end
-
-
-
-
 
 end
