@@ -31,6 +31,10 @@ class Start_Your_Day::Scraper
 
   def self.scrape_five_ideas
     doc4=Nokogiri::HTML(open("https://www.aspeninstitute.org/ideas/"))
+    title = doc4.css(".five-best-ideas_card_text")
+      alternate for title? li a .data-label
+    article_link = doc4.css("li a .data-label href 
+
   end
 
 end
