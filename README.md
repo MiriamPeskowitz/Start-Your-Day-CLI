@@ -1,6 +1,7 @@
 # StartYourDay
 
-Fun things to start your day
+Start_Your_Day brings you a few warm-up ideas, factoids and possibilities to get each day going. It tells you the date and the day of the year, to help you locate yourself in time. Then it offers you a daily meditation, word, five awesome ideas, a writing tip and a word of the day. You can choose whether to see all of these, or choose among them). When done — exit and get a “follow your passion today message.” 
+
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Start_Your_Day`. To experiment with that code, run `bin/console` for an interactive prompt.
 
