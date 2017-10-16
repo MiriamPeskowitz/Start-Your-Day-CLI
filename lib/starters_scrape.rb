@@ -1,5 +1,6 @@
 require 'pry'
 require 'nokogiri'
+require 'open-uri'
 
 class Start_Your_Day::Scraper
 
@@ -33,9 +34,9 @@ class Start_Your_Day::Scraper
     doc4=Nokogiri::HTML(open("https://www.aspeninstitute.org/ideas/"))
     title = doc4.css(".five-best-ideas_card_text")
       alternate for title? li a .data-label
-    article_link = doc4.css("li a .data-label href 
-    -- or should I scrape the larger section: ".five-best-ideas__card-container" and enumerate through it for .data-label and .href? 
-    
+    article_link = doc4.css("li a .data-label href
+    -- or should I scrape the larger section: ".five-best-ideas__card-container" and enumerate through it for .data-label and .href?
+    ideas = doc4.css(".five-best-ideas__card-container href").each {|link| link.text} 
 
   end
 
