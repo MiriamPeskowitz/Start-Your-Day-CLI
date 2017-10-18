@@ -1,0 +1,45 @@
+
+def self.meditation
+      doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
+      @daily_med = doc1.css("blockquote").text.gsub("\n", "").gsub("\t", "")
+      # @@all << @daily_med
+      # div above it is .zen-quote
+    end
+
+    def self.writing_tip
+      binding.pry
+      doc2 = Nokogiri::HTML(open("https://www.dailywritingtips.com/"))
+      @tip = doc2.css(".post-block p").text
+      # @@all<< @tip
+    end
+
+    def self.word_of_the_day
+      doc3 = Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day"))
+      @word = doc3.css("article").text.gsub("\n", "")
+    end
+
+    def self.ideas
+      doc4 = Nokogiri::HTML(open("https://www.aspeninstitute.org/ideas/"))
+      @title = doc4.css(".five-best-ideas__card__text").text # how to get the first only 
+    end
+
+# scraper = Scraper.new #creates instance of the class 
+
+# writing_tip.title 
+#       doc2.css(.post-block)  do |a href, p|
+#         css.(“a”).attribute(“href”),
+#         css.(“p”).text
+#       # end 
+#       title = doc2.css(“.post-block”).children.css("a").attribute(“href”)
+#       description = doc2.css(“.post-block")#{.children.css("href".text}
+
+#     writing.link 
+#     title_and_link = doc2.css(".post-block h2 a href").first-child of post-block   #this is the title and link # => how do i reference the first post block ??
+#     content=doc2.css(".post-block p").first-child of post-block# this is the description
+
+
+ #   alternate for title? li a .data-label
+    # article_link = doc4.css("li a .data-label href
+    # -- or should I scrape the larger section: ".five-best-ideas__card-container" and enumerate through it for .data-label and .href?
+    # ideas = doc4.css(".five-best-ideas__card-container href").each {|link| link.text} 
+    # doc.css('li a .data-label').map { |link| link['href'] }
