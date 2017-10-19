@@ -6,13 +6,14 @@ require 'date'
 class StartYourDay::CLI
 
   def call
+    # start out by scraping all the data
     puts "Welcome to the new day..."
     todays_date
     choose
    
   end
 #get the right syntax
-  def todays_date
+  def get_todays_date # move to object
     time = Time.new
     @full_date = time.strftime(" %A %B %d %Y ")
     @day_in_year = time.strftime("%j")

@@ -1,7 +1,7 @@
 #is this necessary? The scrape result can go directly into the cli.rb 
 
 
-# class Start_Your_Day::Results
+# class StartYourDay::My_Day
 #   attr_accessor 
 
 # @@all = {}

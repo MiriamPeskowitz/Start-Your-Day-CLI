@@ -26,6 +26,7 @@ class Scraper
     # end 
 
   # "#{Scraper.self.day_starters}"
+  #formatting -- dig deep enough into nokogiri to get the most precise text or use .chomp . .split and make it into an array, then iterate over the array. 
 
     def self.meditation
       doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
