@@ -23,7 +23,7 @@ class StartYourDay::CLI
 
   def choose
     #ask for input
-    @input = "" #do I have to initialize this way? 
+    @input = ""
 
     # while @input != "X".downcase
       puts "@@@@@@@@@@\n"

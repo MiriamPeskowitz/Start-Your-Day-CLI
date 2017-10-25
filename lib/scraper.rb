@@ -3,37 +3,13 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper
-
-  #lines 8-27: thinking through whether to push scraped data into an array or hash here, or push it straight into cli.rb. Went with the 2d idea. 
-  # @@all = []
-
-    # def initialize #think about this, to protect the array and not overwrite it. 
-    #   @starters = []
-    # end 
-
-    # def today
-    #    #is this right or should it be @@starters? 
-    #   day_starters
-    # end
-
-    # def self.day_starters
-    #   @@all
-    #  # @starters << meditation, writing_tip, word_of_the_day, five_ideas #change to hash? change names to variables? 
-    # end
-
-    # def self.save
-    #   @@all 
-    # end 
-
-  # "#{Scraper.self.day_starters}"
-  #formatting -- dig deep enough into nokogiri to get the most precise text or use .chomp . .split and make it into an array, then iterate over the array. 
+@@all = []
 
     def self.meditation
       doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
       @daily_med = doc1.css("blockquote").text.gsub("\n", "").gsub("\t", "")
       
       # @@all << @daily_med
-      # div above it is .zen-quote
     end
 
     def self.writing_tip
