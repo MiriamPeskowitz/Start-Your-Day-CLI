@@ -1,49 +1,46 @@
-require 'pry'
+# require 'pry'
 
-class StartYourDay::today
-  attr_reader :meditation, :writing_tip
-  @@all = []
-
-    def initialize(self.starters) #think about this, to protect the array and not overwrite it. 
-      today << self.starters
-    end 
-
-    def self.today
-    	@@all
-    end
+# class StartYourDay::results
+#   attr_reader :meditation, :writing_tip
+#   @@all = []
 
 
-    def starters
-       #is this right or should it be @@starters? 
-      day_starters
-    end
 
-    @@all
-    Scraper.meditation
-    Scraper.writing_tip
-    Scraper.word_of_the_day
-    Scraper.ideas
+#     def initialize(self.starters) #think about this, to protect the array and not overwrite it. 
+#       today << self.starters
+#     end 
 
-    def self.meditation
-    	@daily_med
-    def self.day_starters
-      @@all
-     # @starters << meditation, writing_tip, word_of_the_day, five_ideas #change to hash? change names to variables? 
-    end
-
-    def self.save
-      @@all 
-    end 
-# @@all = {}
-
-	def initialize
-	end 
+#     def self.today
+#     	@@all
+#     end
 
 
-	def meditation
+#     def starters
+#        #is this right or should it be @@starters? 
+#       day_starters
+#     end
 
+#     @@all
+#     Scraper.meditation
+#     Scraper.writing_tip
+#     Scraper.word_of_the_day
+#     Scraper.ideas
 
-	def 
+#     def self.meditation
+#     	@daily_med
+#     def self.day_starters
+#       @@all
+#      # @starters << meditation, writing_tip, word_of_the_day, five_ideas #change to hash? change names to variables? 
+#     end
+
+#     def self.save
+#       @@all 
+#     end 
+# # @@all = {}
+
+# 	def initialize
+# 	end 
+
 #   #what am i creating: a collection of the scrape results
 #   def self.today
 #     self.startersThe scrape result can go directly into the cli.rb 

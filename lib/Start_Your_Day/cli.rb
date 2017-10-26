@@ -8,10 +8,10 @@ class StartYourDay::CLI
   def call
     # start out by scraping all the data
     puts "Welcome to the new day..."
-    todays_date
+    get_todays_date # results.today
     choose
-   
   end
+
 #get the right syntax
   def get_todays_date # move to object
     time = Time.new

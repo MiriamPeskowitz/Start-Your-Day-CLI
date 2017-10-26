@@ -8,5 +8,4 @@ StartYourDay::CLI.new.call
 
 #add "front-end" interaction here 
 # how do i want to start it -- what's in the call method -- hello / get started /pick your data 
-#Start_Your_Day::CLI.new.call 
-
+#copy exactly from the module name 

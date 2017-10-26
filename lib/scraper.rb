@@ -6,6 +6,8 @@ require 'open-uri'
 class Scraper
 @@all = []
 
+
+
     def self.meditation
       doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
       @daily_med = doc1.css("blockquote").text.gsub("\n", "").gsub("\t", "")
@@ -29,7 +31,7 @@ class Scraper
     def self.ideas
       doc4 = Nokogiri::HTML(open("https://www.aspeninstitute.org/ideas/"))
       @title = doc4.css(".five-best-ideas__card__text").text.gsub(".", ".  ") # how to get the first only #change to regex with . ! ? 
-      @@all<@title
+      @@all<<@title
     end
 
     def self.starters
