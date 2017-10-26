@@ -1,14 +1,15 @@
-#is this necessary? The scrape result can go directly into the cli.rb 
+#is this necessary? The scrape result can go directly into the cli.rb. Yes: Because Objects 
+#separation of concerns: make each type its own object. 
 
 
-# class Start_Your_Day::Meditation 
-# 	attr_reader :text
+class Start_Your_Day::Meditation 
+	attr_reader :text
 
-# 	def initialize(text)
-# 	@text = text
-# 	end
+	def initialize(text)
+		@text = text
+	end
 
-# end
+end
 
 
 #   attr_accessor 
@@ -25,5 +26,7 @@
 #   def self.all
 #     doc1 =
 #   end
+
+
 
 # end
