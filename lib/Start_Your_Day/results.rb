@@ -1,7 +1,16 @@
 #is this necessary? The scrape result can go directly into the cli.rb 
 
 
-# class Start_Your_Day::Results
+# class Start_Your_Day::Meditation 
+# 	attr_reader :text
+
+# 	def initialize(text)
+# 	@text = text
+# 	end
+
+# end
+
+
 #   attr_accessor 
 
 # @@all = {}

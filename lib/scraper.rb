@@ -30,7 +30,7 @@ class Scraper
     def self.meditation
       doc1 = Nokogiri::HTML(open("https://www.dailyzen.com/"))
       @daily_med = doc1.css("blockquote").text.gsub("\n", "").gsub("\t", "")
-      
+      # Meditation.new(@daily_med)
       # @@all << @daily_med
       # div above it is .zen-quote
     end
@@ -45,6 +45,7 @@ class Scraper
       doc3 = Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day"))
       @word = doc3.css(".word-and-pronunciation h1").text # this isn't showing up. how do I make two pieces of data get to the cli? 
       @definition = doc3.css(".wod-did-you-know-container").text.gsub("\n", " ").gsub("                ", " ")
+      binding.pry
     end
 
     def self.ideas
